@@ -1,0 +1,11 @@
+.Message-box {
+  width: 40%;
+  min-height: 100px;
+  background-color: #f5f6fa;
+  border: 1px solid #f5f6fa;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: black;
+}
