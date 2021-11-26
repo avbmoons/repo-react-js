@@ -7,18 +7,21 @@ import { MessageForm } from './Components/MessageForm/MessageForm.jsx';
 
 function App() {
 
-const INITIAL_MESSAGES={
+const INITIAL_MESSAGES=[
+  {
   id:uuidv4(),
   author:"BOT",
   text:"Hi, lets chatting now!",
-};
-const BOT_MESSAGES={
+}];
+const BOT_MESSAGES=[
+  {
   id:uuidv4(),
   author:"BOT",
   text:"Thanks! So, lets keep...",
-};
+}];
 
-const {messageList, setMessageList}=useState([INITIAL_MESSAGES]);
+const [messageList, setMessageList]=useState(INITIAL_MESSAGES);
+console.log(messageList);
 
 useEffect(()=>{  
   let timer;
