@@ -1,12 +1,12 @@
+import {v4 as uuidv4} from "uuid";
 import "./MessageList.css";
-import TextField from '@mui/material/TextField';
 
 export function MessageList({messageList}){
 
-    return <div>{messageList.map(({id, author, text,})=>(
-            <div className="Message-box" key={id}>
-                <TextField className="Message-author" id="outlined-basic" label="author" variant="outlined" value={author} />
-                <TextField className="Message-text" id="outlined-basic" label="your message:" variant="outlined" value={text} />
+    return <div className="Message-list-box">{messageList.map(({id, author, text,})=>(
+            <div className="Message-box" key={uuidv4()}>
+                <span className="Message-author">{author}</span>
+                <p className="Message-text">{text}</p>
             </div>               
         ))}
     </div>    

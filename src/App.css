@@ -1,12 +1,18 @@
 .App {
   text-align: center;
   height: 100vh;
+}
+
+.Wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .App-top {
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,8 +21,7 @@
 
 .App-header {
   background-color: #3a3e4f;
-  height: 20%;
-  border: 1px solid violet;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,18 +47,61 @@
 }
 
 .Chat-block {
+  margin: auto;
   width: 100%;
-  height: 100%;
-  border: 1px solid green;
+  height: 70vh;
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 100px;
+  left: 0;
+}
+
+.Chat-block-box {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
   justify-content: space-between;
+}
+
+.Chat-list-block {
+  width: 30%;
+  height: inherit;
+  background-color: #f7f9fc;
+}
+
+.Messages-block {
+  width: 70%;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.Message-list-block {
+  margin: 0 auto;
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.Message-form-block {
+  width: 100%;
+  height: 10%;
+  position: sticky;
 }
 
 .App-footer {
   background-color: #3a3e4f;
-  height: 20%;
-  border: 1px solid violet;
-  margin-top: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }

@@ -1,0 +1,45 @@
+.Chat-list {
+  border: 1px solid #b6b8bf;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.Chat-list-btn {
+  margin: 1px auto;
+  width: 98%;
+  min-height: 30px;
+  background-color: #fad791;
+  border: none;
+}
+.Chat-list-btn:hover {
+  background-color: #f2be8d;
+}
+
+.Chat-list-item {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.Chat-name {
+  padding-left: 10px;
+  padding-top: 7px;
+  text-align: left;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Chat-mark {
+  padding-right: 10px;
+  text-align: right;
+  color: black;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: italic;
+}
