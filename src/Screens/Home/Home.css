@@ -20,13 +20,13 @@
 }
 
 .App-header {
-  background-color: #3a3e4f;
+  background-color: #a6b1e3;
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: white;
-  z-index: 999;
+  text-decoration: none;
 }
 
 .Header-box {
@@ -34,8 +34,7 @@
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .Header-img {
@@ -49,13 +48,15 @@
 }
 
 .Header-menu {
-  margin: 0 auto;
-  width: 70%;
-  height: fit-content;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-decoration: none;
-  color: orange;
+  color: white;
+}
+
+.Header-menu-item {
+  text-decoration: none;
+  color: white;
 }
 
 .Chat-block {
