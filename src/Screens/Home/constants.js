@@ -19,12 +19,5 @@ export const CHAT_LIST=[
       id:uuidv4(),
       name:"Sony Round",
     },
-    {
-      id:uuidv4(),
-      name:"Qualty Trip",
-    },
-    {
-      id:uuidv4(),
-      name:"Mountain Sine",
-    },
+
   ];

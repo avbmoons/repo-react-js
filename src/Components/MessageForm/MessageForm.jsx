@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+//import {v4 as uuidv4} from "uuid";
 import './MessageForm.css';
 import { AUTHORS } from "./constants";
 import Button from '@mui/material/Button';
@@ -32,7 +33,7 @@ export function MessageForm({messageList, setMessageList}) {
         <span className="Message-auth" value={messageAuthor} onChange={showAuthor}></span>
         
         <TextareaAutosize aria-label="minimum height" minRows={2.5} className="Message-input" ref={ref} value={messageText} onChange={handleTextChange} placeholder="your message here..." style={{ width: 400 }} autoFocus/>
-        <Button variant="contained" className="Message-btn" type="submit" onClick={handleAddText}>Send</Button>
+        <Button variant="contained" className="Message-btn" type="submit" onClick={handleAddText}>Send&nbsp;&#9658;</Button>
     </div>;
 
 
