@@ -1,0 +1,12 @@
+.not-found-block {
+  margin: 100px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.not-found-text {
+  text-align: center;
+  color: red;
+}
